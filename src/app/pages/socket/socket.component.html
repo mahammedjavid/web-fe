@@ -1,0 +1,8 @@
+<h2>{{socketId}}</h2>
+<input type="text" placeholder="create new room" [(ngModel)]="roomID"> <button (click)="createRoom()">Join Room</button>
+<input type="text" placeholder="roomID" name="" id="" [(ngModel)]="roomID">
+<input type="text" name="" id="" [(ngModel)]="message" placeholder="message">
+<button (click)="sendMessage()">Send</button>
+<ul>
+    <li *ngFor="let data of all_data">{{data}}</li>
+</ul>
